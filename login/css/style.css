@@ -9,6 +9,23 @@ list-type-ulli, .socials {
   margin: 0;
   padding: 0; }
 
+  .form-button {
+    background-color: #4CAF50;
+    font-size: 15px;
+    border-radius: 20;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .button{
+    color: white;
+    align-content: center;
+  }
+
 /* poppins-300 - latin */
 @font-face {
   font-family: 'Poppins';

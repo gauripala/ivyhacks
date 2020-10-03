@@ -40,7 +40,7 @@ function createPostElement(postId, title, text, author, image, file) {
   var html = //insert post 
   
   // Create the DOM element from the HTML.
-  var div = document.createElement('div');
+  div = document.createElement('div');
   div.innerHTML = html;
   var postElement = div.firstChild;
   if (componentHandler) {
@@ -143,7 +143,7 @@ function newPostForCurrentUser(title, text) {
   var userId = firebase.auth().currentUser.uid;
   return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
     var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-    return writeNewPost(firebase.auth().currentUser.uid, username, imageUrl, fileUrl
+    return writeNewPost(firebase.auth().currentUser.uid, username, imageUrl, fileUrl,
     title, text);
   });
 }
