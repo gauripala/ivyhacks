@@ -744,8 +744,23 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
-
+/*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+.inner-page h3 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
+.inner-page h2 {
+  font-weight: 560;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
