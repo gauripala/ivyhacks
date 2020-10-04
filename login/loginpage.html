@@ -33,10 +33,10 @@
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
                             </div>
-                            <div class="form-group form-button">
-                                <button id = "signIn" onClick = "loginAuth.login()">Login!</button> 
+                            <!-- <div class="form-group form-button"> -->
+                                <button class="form-group form-button" id = "signIn">Login!</button> 
                                 <!-- href="../index.html" -->
-                            </div>
+                            <!-- </div> -->
                         </form>
                     </div>
                 </div>
@@ -69,11 +69,12 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
+    const auth  = firebase.auth();
     </script>
 
     <!-- JS -->
+    <script src = "loginAuth.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src = "loginAuth.js"></script>
     </body>
 </html>
