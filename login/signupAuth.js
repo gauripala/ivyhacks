@@ -23,7 +23,12 @@ regForm.addEventListener('submit', (e) => {
     }
 
     if(userEmail != "" && userName != ""){
-       firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+       firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
+       .then(function(user) {
+        window.alert("User successfully registered.");
+        window.location.href = "loginpage.html";
+        regForm.reset();
+      }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -32,9 +37,6 @@ regForm.addEventListener('submit', (e) => {
         }
         alert("Error: " + errorMessage);
       });
-      window.alert("User successfully registered.");
-      window.location.href = "loginpage.html";
-      regForm.reset();
     }else{
       window.alert("Please enter all fields.");
     }

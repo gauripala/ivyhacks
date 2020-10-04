@@ -17,10 +17,10 @@ signinform.addEventListener('submit', (e) => {
         alert('Please enter a password.');
         return;
       }
-    auth.signInWithEmailAndPassword(userEmail, userPass).then(function(){
+    auth.signInWithEmailAndPassword(userEmail, userPass).then(function(user){
         window.alert("User successfully signed in");
-        window.location.herf = "../index.html"; 
-        // signinform.reset();
+        window.location.href = "../index.html";
+        signinform.reset();
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
