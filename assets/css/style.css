@@ -802,7 +802,7 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 80px 80px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -822,14 +822,14 @@ section {
 
 .services .icon-box .icon i {
   color: #151515;
-  font-size: 28px;
+  font-size: 40px;
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .services .icon-box h4 a {
@@ -838,12 +838,12 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #abeefa;
+  color: #00d9ff;
 }
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
